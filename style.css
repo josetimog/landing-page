@@ -1,0 +1,289 @@
+/* Styles used
+
+Header:
+background color: #1F2937
+link text - 18px #E5E7EB
+logo text - 24px #F9FAF8
+
+Hero:
+main text: 48px extra-bold #F9FAF8
+secondary text - 18px #E5E7EB
+
+information:
+header text - 36px extra-bold #1F2937
+
+quote:
+background color - #E5E7EB
+text - 36px light italic #1F2937
+
+Call to action:
+background color: #3882F6
+button color: #3882F6
+
+Footer:
+background color: #1F2937
+
+*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+/******************************** STRUCTURE ********************************/
+
+header, footer, section {
+    /* border: 4px solid blue; */
+    /* min-height: 200px; */
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 75%;
+    /* border: 3px solid red; */
+    min-height: 50px;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/******************************** Header ********************************/
+
+header {
+    background-color: #1F2937;
+}
+
+.header-logo h1{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.logo {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.header-links {
+    display: flex;
+    width: 30%;
+    justify-content:space-between;
+}
+
+.header-links div p {
+    color: #F9FAF8;
+}
+
+/******************************** Hero ********************************/
+
+#section-hero {
+    background-color: #1F2937;
+}
+
+.hero {
+    display: flex;
+    margin: 100px 0px;
+    justify-content: space-between;
+}
+
+.hero-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.hero-text div {
+    /* border: 3px solid green; */
+    background-color: #3882F6;
+    align-self: flex-start;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.hero-text .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn p {
+    margin: 0px;
+    padding: 10px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    color: #E5E7EB;
+    margin-top: 0px;
+}
+
+.hero-image {
+    width: 45%;
+}
+
+.hero img {
+    width: 100%;
+}
+
+/******************************** Information ********************************/
+
+#section-information {
+    background-color: white;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-text h1 {
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+    text-align: center;
+}
+
+.products {
+    /* border: 3px solid violet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.product-1, .product-2, .product-3, .product-4 {
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image {
+    border: 3px solid #3882F6;
+    border-radius: 10px;
+    min-height: 100px;
+    width: 80%;
+    align-self: center;
+}
+
+.products p{
+    margin-top: 5px;
+    width: 80%;
+    text-align: center;
+    /* border: 3px solid orange; */
+}
+
+/******************************** Quote ********************************/
+
+#section-quote {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+
+.testimonial {
+    font-size: 36px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.testimonial p {
+    margin-bottom: 0px;
+}
+
+.thor {
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/******************************** Call to action ********************************/
+
+#section-cta {
+    background-color: white;
+}
+
+.cta {
+    display: flex;
+    /* border: 3px solid orange; */
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #3882F6;
+    border-radius: 10px;
+}
+
+.cta-text {
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.cta-text-content {
+    color: #F9FAF8;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.cta-text-content h3{
+    font-weight: bolder;
+}
+
+.cta-btn {
+    display: flex;
+    /* border: 3px solid green; */
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+}
+
+.cta-btn div {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cta-btn  p {
+    border: 2px solid #F9FAF8;
+    padding: 5px 30px;
+    color: #F9FAF8;
+    border-radius: 10px;
+    width: 150%;
+    text-align: center;
+}
+
+/******************************** Footer ********************************/
+
+footer {
+    background-color: #1F2937;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAF8;
+}
